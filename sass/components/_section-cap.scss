@@ -1,0 +1,96 @@
+/* ________________________________SECTION OF CAP______________________________ */
+
+.section-cap {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-color: $accent-color;
+    color: $white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background: #188ce8;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: $pre-tablet) {
+    background: $background-color;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+      max-width: 360px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    background: $background-color;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+      max-width: 360px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: $background-color;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
+
+/* ________________________________END SECTION OF CAP______________________________ */

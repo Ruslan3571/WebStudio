@@ -1,0 +1,55 @@
+/* ________________________________________ PORTFOLIO ___________________________________ */
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $white-color;
+  border-top: 1px solid #ececec;
+
+  &__titleof {
+    display: none;
+  }
+}
+
+.section-filters__list {
+  display: inline-flex;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.section-filters__item {
+  margin-right: 8px;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-filters__button {
+  margin: 0;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  color: $title-text-color;
+  background: #f5f4fa;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--first {
+    padding: 6px 25px;
+    border-radius: 4px;
+    background: #f5f4fa;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background: $accent-color;
+    cursor: pointer;
+  }
+}

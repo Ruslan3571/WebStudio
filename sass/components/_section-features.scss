@@ -1,0 +1,135 @@
+/* ________________________________SECTION OF FEATURES______________________________ */
+.section-features {
+  background-color: $white-color;
+
+  &__titleof {
+    display: none;
+    margin: 0;
+    color: $title-text-color;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item:before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background: #f5f4fa;
+  }
+  &__item:nth-child(1)::before {
+    background-image: url(../images/svg1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__item:nth-child(2)::before {
+    background-image: url(../images/svg2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__item:nth-child(3)::before {
+    background-image: url(../images/svg3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__item:nth-child(4)::before {
+    background-image: url(../images/svg4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: $title-text-color;
+  }
+  &__text {
+    margin: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $primary-text-color;
+  }
+
+  @media screen and (max-width: $pre-tablet) {
+    &__list {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    &__item {
+      margin: 0;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__item:before {
+      max-width: 450px;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+    &__item:before {
+      max-width: 354px;
+    }
+
+    &__text {
+      max-width: 354px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item:before {
+      width: 270px;
+    }
+  }
+}
+
+/* ________________________________END SECTION OF FEATURES______________________________ */
