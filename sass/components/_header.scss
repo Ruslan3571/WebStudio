@@ -12,11 +12,9 @@
   align-items: center;
 
   @media screen and (max-width: $pre-tablet) {
-    display: inline-flex;
     justify-content: space-between;
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
-    display: inline-flex;
     justify-content: space-between;
   }
 }
@@ -228,7 +226,6 @@
 
   &.is-open {
     display: block;
-    
   }
   // .menu-container__list
 
