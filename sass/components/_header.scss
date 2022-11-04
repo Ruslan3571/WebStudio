@@ -1,7 +1,7 @@
 /* ________________________________HEADER_____________________________________ */
 
 .header {
-  position: relative;
+  // position: relative;
   margin: 0 auto;
   padding: 0;
   background: $white-color;
@@ -191,7 +191,7 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 
   &:hover,
   &:focus {
@@ -213,10 +213,10 @@
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   display: none;
-
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   padding-top: 40px;
@@ -224,9 +224,11 @@
   padding-left: 48px;
   text-align: left;
   background-color: $white-color;
+  z-index: 1;
 
   &.is-open {
     display: block;
+    
   }
   // .menu-container__list
 
