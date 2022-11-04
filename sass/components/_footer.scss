@@ -13,8 +13,7 @@
 
 .footer-address {
   display: block;
-  margin-right: 70px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-logo {
@@ -22,9 +21,13 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  font-size: 24px;
+  line-height: 1.17;
 
   .logo__label {
     color: $white-color;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -35,7 +38,7 @@
 }
 
 .footer-contacts__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   &:last-child {
     margin-bottom: 0;
@@ -74,8 +77,8 @@
 }
 
 .footer-links {
-  text-align: left;
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 
   &__text {
     margin: 0;
@@ -126,7 +129,7 @@
 .footer-subscribe__text {
   margin: 0;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
   font-family: $main-font;
   font-weight: 700;
   font-size: 14px;
@@ -142,10 +145,10 @@
 }
 .footer-subscribe__input {
   display: inline-block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: $background-color;
@@ -188,6 +191,66 @@
   margin: 0;
   margin-left: 10px;
   fill: $white-color;
+}
+
+@media screen and (max-width: $pre-tablet) {
+  .footer-block {
+    display: block;
+  }
+  .footer-subscribe__flex {
+    display: block;
+  }
+  .footer-address {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+}
+
+@media screen and (min-width: $desktop) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 1.19;
+
+    .logo__label {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+
+  .footer-contacts__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .footer-address {
+    text-align: left;
+  }
+
+  .footer-links {
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 70px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .footer-subscribe__text {
+    text-align: left;
+  }
+  .footer-address {
+    margin-right: 70px;
+  }
+
+  .footer-subscribe__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 /* _____________________________________ END OF FOOTER ___________________________________ */

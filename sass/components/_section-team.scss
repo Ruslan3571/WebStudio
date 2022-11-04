@@ -1,13 +1,13 @@
 /* ___________________________________SECTION OF TEAM___________________________________ */
 
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 
   &__title {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -16,22 +16,16 @@
 }
 
 .section-team__list {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .section-team__item {
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: $white-color;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .section-team__img {
@@ -60,7 +54,7 @@
   display: inline-block;
   width: 44px;
   height: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   margin-right: 10px;
   border-radius: 50%;
   text-decoration: none;
@@ -92,6 +86,60 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: $pre-tablet) {
+  .section-team__list {
+    display: block;
+  }
+
+  .section-team__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-team__img {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+  .section-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section-team__img {
+    min-width: 354px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .section-team__list {
+    display: flex;
+  }
+
+  .section-team__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .social-links {
+    margin-bottom: 30px;
+  }
 }
 
 /* _________________________________END SECTION OF TEAM_________________________________ */

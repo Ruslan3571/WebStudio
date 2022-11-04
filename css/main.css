@@ -581,79 +581,81 @@
 
 /* ________________________________END SECTION OF FEATURES______________________________ */
 /* ___________________________________SECTION OF WORK___________________________________ */
-.section-work {
-  padding-bottom: 94px;
-  background-color: #ffffff;
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
-.section-work__center {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .section-work {
+    padding-bottom: 94px;
+    background-color: #ffffff;
+  }
+  .section-work__center {
+    text-align: center;
+  }
+  .section-work__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #212121;
+  }
+  .section-work__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .section-work__item {
+    margin-right: 30px;
+    position: relative;
+  }
+  .section-work__item:last-child {
+    margin-right: 0;
+  }
+  .section-work__item:before {
+    display: inline-block;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .section-work__item:nth-child(1)::before {
+    content: "Десктопні додатки";
+  }
+  .section-work__item:nth-child(2)::before {
+    content: "Мобільні додатки";
+  }
+  .section-work__item:nth-child(3)::before {
+    content: "Дизайнерські рішення";
+  }
 }
-.section-work__title {
-  margin: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: #212121;
-}
-.section-work__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.section-work__item {
-  margin-right: 30px;
-  position: relative;
-}
-.section-work__item:last-child {
-  margin-right: 0;
-}
-
-.section-work__item:before {
-  display: inline-block;
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  bottom: 0;
-  left: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.section-work__item:nth-child(1)::before {
-  content: "Десктопні додатки";
-}
-
-.section-work__item:nth-child(2)::before {
-  content: "Мобільні додатки";
-}
-
-.section-work__item:nth-child(3)::before {
-  content: "Дизайнерські рішення";
-}
-
 /* ___________________________________END SECTION OF WORK___________________________________ */
 /* ___________________________________SECTION OF TEAM___________________________________ */
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 .section-team__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -661,23 +663,16 @@
 }
 
 .section-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .section-team__item {
-  margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
-}
-.section-team__item:last-child {
-  margin-right: 0;
 }
 
 .section-team__img {
@@ -706,7 +701,7 @@
   display: inline-block;
   width: 44px;
   height: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   margin-right: 10px;
   border-radius: 50%;
   text-decoration: none;
@@ -743,16 +738,66 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .section-team__list {
+    display: block;
+  }
+  .section-team__item {
+    margin-bottom: 30px;
+  }
+  .section-team__item:last-child {
+    margin-bottom: 0;
+  }
+  .section-team__img {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section-team__img {
+    min-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-team__title {
+    margin-bottom: 50px;
+  }
+  .section-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-team__item {
+    margin-right: 30px;
+  }
+  .section-team__item:last-child {
+    margin-right: 0;
+  }
+  .social-links {
+    margin-bottom: 30px;
+  }
+}
 /* _________________________________END SECTION OF TEAM_________________________________ */
 /* ________________________________ SECTION OF CUSTOMERS________________________________ */
 .section-customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 .section-customers__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -763,9 +808,6 @@
   color: #212121;
 }
 .section-customers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -774,9 +816,7 @@
           justify-content: center;
 }
 .section-customers__item {
-  width: 170px;
   height: 92px;
-  margin-right: 30px;
   padding-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
@@ -798,9 +838,6 @@
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
-.section-customers__item:last-child {
-  margin-right: 0;
-}
 .section-customers__icon {
   width: 106px;
   height: 60px;
@@ -814,6 +851,53 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .section-customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section-customers__item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section-customers__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-customers__title {
+    margin-bottom: 50px;
+  }
+  .section-customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-customers__item {
+    width: 170px;
+    margin-right: 30px;
+  }
+  .section-customers__item:last-child {
+    margin-right: 0;
+  }
+}
 /* ________________________________ END SECTION OF CUSTOMERS________________________________ */
 /* _______________________________________ FOOTER _________________________________________ */
 .footer {
@@ -832,8 +916,7 @@
 
 .footer-address {
   display: block;
-  margin-right: 70px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-logo {
@@ -841,9 +924,13 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  font-size: 24px;
+  line-height: 1.17;
 }
 .footer-logo .logo__label {
   color: #ffffff;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .footer-contacts__list {
@@ -853,7 +940,7 @@
 }
 
 .footer-contacts__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .footer-contacts__item:last-child {
   margin-bottom: 0;
@@ -887,8 +974,8 @@
 }
 
 .footer-links {
-  text-align: left;
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .footer-links__text {
   margin: 0;
@@ -939,7 +1026,7 @@
 .footer-subscribe__text {
   margin: 0;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -958,10 +1045,10 @@
 
 .footer-subscribe__input {
   display: inline-block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: #2f303a;
@@ -1014,6 +1101,55 @@
   fill: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-block {
+    display: block;
+  }
+  .footer-subscribe__flex {
+    display: block;
+  }
+  .footer-address {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 1.19;
+  }
+  .footer-logo .logo__label {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .footer-contacts__item {
+    margin-bottom: 9px;
+  }
+  .footer-contacts__item:last-child {
+    margin-bottom: 0;
+  }
+  .footer-address {
+    text-align: left;
+  }
+  .footer-links {
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+  .footer-links:last-child {
+    margin-right: 0;
+  }
+  .footer-subscribe__text {
+    text-align: left;
+  }
+  .footer-address {
+    margin-right: 70px;
+  }
+  .footer-subscribe__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
 /* _____________________________________ END OF FOOTER ___________________________________ */
 /* ________________________________________ PORTFOLIO ___________________________________ */
 .section-portfolio {
