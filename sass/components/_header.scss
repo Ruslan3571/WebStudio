@@ -191,6 +191,7 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  z-index: 1;
 
   &:hover,
   &:focus {
@@ -214,14 +215,15 @@
 .menu-container {
   position: absolute;
   display: none;
-  height: 100%;
+
   width: 100%;
-  top: 40px;
+  top: 0;
   left: 0;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 48px;
   text-align: left;
+  background-color: $white-color;
 
   &.is-open {
     display: block;
