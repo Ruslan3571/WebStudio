@@ -7,7 +7,7 @@
 
   &-block {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
   }
 }
 
@@ -206,6 +206,23 @@
 }
 
 @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+  .footer-block {
+    display: block;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  .footer-subscribe__flex {
+    display: inline-grid;
+    justify-items: center;
+  }
+
+  .footer-links {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -250,6 +267,10 @@
     width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
+  }
+  .footer-flex {
+    display: flex;
+    margin-right: 93px;
   }
 }
 
