@@ -3,6 +3,7 @@
 .section-project {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10,16 +11,7 @@
   /* overflow: hidden; */
 
   &__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
     cursor: pointer;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 7px;
-    }
   }
 }
 
@@ -93,4 +85,18 @@
   color: $primary-text-color;
 }
 
+@media screen and (max-width: $pre-tablet) {
+  .section-project__img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+  .section-project__img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+}
 /* __________________________________ END SECTION OF PROJECT _____________________________ */
