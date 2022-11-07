@@ -223,7 +223,7 @@
   text-align: left;
   background-color: $white-color;
   z-index: 1;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   &.is-open {
     display: block;
@@ -231,8 +231,9 @@
   // .menu-container__list
 
   &__list {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    margin-bottom: 306px;
     padding: 0;
     list-style: none;
   }
@@ -241,9 +242,10 @@
 
   &__item {
     margin-bottom: 32px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+
+    // &:last-child {
+    //   margin-bottom: 0px;
+    // }
   }
 
   // .menu-container__link
@@ -272,17 +274,18 @@
 }
 
 .menu-contacts {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  margin-bottom: 64px;
   padding: 0;
   list-style: none;
   // .menu-contacts__item
 
   &__item {
     margin-bottom: 32px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    // &:last-child {
+    //   margin-bottom: 0;
+    // }
   }
 
   // .menu-contacts__link

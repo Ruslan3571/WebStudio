@@ -89,6 +89,9 @@
 }
 
 @media screen and (max-width: $pre-tablet) {
+  .section-team {
+    min-width: 480px;
+  }
   .section-team__list {
     display: block;
   }

@@ -13,37 +13,21 @@
     padding: 0;
     list-style: none;
   }
-
-  &__item:before {
-    display: block;
-    content: "";
+  &__img {
+    display: flex;
     height: 120px;
     margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     background: #f5f4fa;
   }
-  &__item:nth-child(1)::before {
-    background-image: url(../images/svg1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &__item:nth-child(2)::before {
-    background-image: url(../images/svg2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &__item:nth-child(3)::before {
-    background-image: url(../images/svg3.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &__item:nth-child(4)::before {
-    background-image: url(../images/svg4.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+
+  // &__item:nth-child(1)::before {
+  //   background-image: url(../images/svg1.svg);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
 
   &__item {
     margin-right: 30px;
