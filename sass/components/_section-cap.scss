@@ -45,9 +45,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background-480.jpg);
+      url(../images/header-480.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 450px;
 
     &__title {
       max-width: 360px;
@@ -61,7 +62,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background-768.jpg);
+      url(../images/header-768.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -81,7 +82,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background.jpg);
+      url(../images/header-1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 

@@ -251,6 +251,7 @@ body.modal-open {
   text-align: left;
   background-color: #ffffff;
   z-index: 1;
+  overflow-y: scroll;
 }
 .menu-container.is-open {
   display: block;
@@ -411,10 +412,11 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .section-cap {
     background: #2f303a;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-480.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-480.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-480.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 450px;
   }
   .section-cap__title {
     max-width: 360px;
@@ -423,8 +425,8 @@ body.modal-open {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-cap {
     background: #2f303a;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-768.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-768.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-768.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -439,8 +441,8 @@ body.modal-open {
     padding-top: 200px;
     padding-bottom: 200px;
     background: #2f303a;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-1280.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1099,6 +1101,9 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    min-width: 450px;
+  }
   .footer-block {
     display: block;
   }
@@ -1285,7 +1290,6 @@ body.modal-open {
 .section-project__wrapper {
   position: relative;
   overflow: hidden;
-  height: 294px;
 }
 
 .section-project__overlay {
@@ -1361,10 +1365,16 @@ body.modal-open {
   .section-project__img {
     width: 450px;
   }
+  .section-project__overlay {
+    padding: 77px 24px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-project__img {
     width: 354px;
+  }
+  .section-project__overlay {
+    padding: 49px 24px 77px;
   }
 }
 /* __________________________________ END SECTION OF PROJECT _____________________________ */

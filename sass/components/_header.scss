@@ -223,6 +223,7 @@
   text-align: left;
   background-color: $white-color;
   z-index: 1;
+  overflow-y: scroll;
 
   &.is-open {
     display: block;
