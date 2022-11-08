@@ -226,7 +226,9 @@
   // overflow-y: scroll;
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   // .menu-container__list
 
@@ -283,9 +285,9 @@
 
   &__item {
     margin-bottom: 32px;
-    // &:last-child {
-    //   margin-bottom: 0;
-    // }
+    &:last-child {
+      margin-bottom: 64px;
+    }
   }
 
   // .menu-contacts__link
