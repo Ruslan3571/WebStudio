@@ -16,10 +16,14 @@
 }
 
 .section-project__item .section-project__url {
+  display: block;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
+  }
 }
 .section-project__wrapper {
   position: relative;
@@ -45,20 +49,19 @@
   color: $white-color;
 }
 
-.section-project__item:hover,
-.section-project__item:focus {
-  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
-    1px 4px 6px rgb(0 0 0 / 16%);
-}
+// .section-project__item:hover,
+// .section-project__item:focus {
+//   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+//     1px 4px 6px rgb(0 0 0 / 16%);
+// }
 
 .section-project__url:hover .section-project__overlay,
 .section-project__url:focus .section-project__overlay {
   transform: translateY(0);
-  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
-    1px 4px 6px rgb(0 0 0 / 16%);
 }
 
 .section-project__aside {
+  margin-top: -1px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
