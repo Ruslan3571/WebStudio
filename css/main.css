@@ -1232,6 +1232,8 @@ body.modal-open {
 .section-filters__button:hover, .section-filters__button:focus {
   color: #ffffff;
   background: #2196f3;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
@@ -1239,6 +1241,10 @@ body.modal-open {
   .section-filters__list {
     margin-bottom: 40px;
     max-width: 326px;
+  }
+  .section-portfolio {
+    border-top: 1px solid #ececec;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1591,6 +1597,7 @@ body.modal-open {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  color: #757575;
   cursor: pointer;
 }
 

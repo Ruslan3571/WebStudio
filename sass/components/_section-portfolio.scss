@@ -46,6 +46,8 @@
   &:focus {
     color: $white-color;
     background: $accent-color;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
     cursor: pointer;
   }
 }
@@ -53,6 +55,10 @@
   .section-filters__list {
     margin-bottom: 40px;
     max-width: 326px;
+  }
+  .section-portfolio {
+    border-top: 1px solid #ececec;
+    min-width: 480px;
   }
 }
 
